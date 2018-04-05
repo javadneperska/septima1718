@@ -4,7 +4,6 @@ import org.junit.Test;
 public class PersonTest {
 
     private static final String FIRST_NAME = "mka";
-
     @Test
     public void testFirstName(){
         Person p = new Person();
