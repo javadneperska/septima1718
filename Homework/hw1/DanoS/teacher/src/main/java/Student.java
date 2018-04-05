@@ -3,7 +3,8 @@ public class Student extends Person {
     private int numberOfSubjects;
     private int birthNumber;
     private int knownLanguages;
-    private int[] levelOfLanguage = {1,2,3,4,5};
+    private SkillLevel levelOfLanguage;
+
 
     @Override
     public String getFirstName() {
@@ -69,11 +70,21 @@ public class Student extends Person {
         this.knownLanguages = knownLanguages;
     }
 
-    public int[] getLevelOfLanguage() {
+    public SkillLevel getLevelOfLanguage() {
         return levelOfLanguage;
     }
 
-    public void setLevelOfLanguage(int[] levelOfLanguage) {
+    public void setLevelOfLanguage(SkillLevel levelOfLanguage) {
         this.levelOfLanguage = levelOfLanguage;
+    }
+
+    @Override
+    public String toString() {
+        return  super.toString() +  "Is Student{" +
+                "numberOfSubjects=" + numberOfSubjects +
+                ", birthNumber=" + birthNumber +
+                ", knownLanguages=" + knownLanguages +
+                ", levelOfLanguage=" + levelOfLanguage +
+                "} " ;
     }
 }
