@@ -1,0 +1,14 @@
+Pledge of Hands 
+Judgement Staff
+----------------------------------------------------
+Staff
+Physical Damage: 61~113
+Critical Strike Chance: 6.60%
+Attacks per Second: 1.25
+Requires Level 68, 113 Str, 113 Int
+----------------------------------------------------
+12% Chance to Block
+----------------------------------------------------
+Socketed Gems are Supported by level 30 Spell Echo 
+(120 to 160)% increased Spell Damage 
+100% increased maximum Mana

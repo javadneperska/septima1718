@@ -1,0 +1,12 @@
+Wurm's Molt 
+Leather Belt
+------------------------------------------------
+Requires Level 8
+------------------------------------------------
++(25 to 40) to Maximum Life
+------------------------------------------------
++(20 to 30) to Strength 
++(20 to 30) to Intelligence 
++(10 to 20)% to Cold Resistance 
+0.4% of Physical Attack Damage Leeched as Life 
+0.4% of Physical Attack Damage Leeched as Mana

@@ -1,0 +1,13 @@
+Shavronne's Wrappings 
+Occultist's Vestment
+---------------------------------------------------
+Energy Shield: (336 to 420)
+Requires Level 62, 180 Int
+---------------------------------------------------
+(3 to 10)% increased Spell Damage
+---------------------------------------------------
+(140 to 200)% increased Energy Shield 
+10% faster start of Energy Shield Recharge 
++(30 to 40)% to Lightning Resistance 
+Reflects 1~250 Lightning Damage to Melee Attackers 
+Chaos Damage does not bypass Energy Shield

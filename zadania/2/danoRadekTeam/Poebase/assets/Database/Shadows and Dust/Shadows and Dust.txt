@@ -1,0 +1,14 @@
+Shadows and Dust 
+Clasped Mitts
+------------------------------------------------------
+Evasion: (98 to 113)
+Energy Shield: (30 to 35)
+Requires Level 31, 25 Dex, 25 Int
+------------------------------------------------------
+(20 to 30)% increased Global Critical Strike Chance 
++(25 to 45)% to Global Critical Strike Multiplier 
+(100 to 130)% increased Evasion and Energy Shield 
+0.2% of Physical Attack Damage Leeched as Mana 
+Creates a Smoke Cloud on Rampage 
+Gain Unholy Might for 3 seconds on Rampage 
+Rampage
