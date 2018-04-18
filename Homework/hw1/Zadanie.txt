@@ -1,0 +1,5 @@
+-Dorobte do programu SKELETON (located at septima1617/teacher) studenta, ktory bude dedit po Person.class a bude obohateny o parametre : 
+--Pocet navstevovanych predmetov
+--Pohlavie (ENUM)
+--rodne cislo 
+--pocet jazykov ktore ovlada ( + ich uroven)
