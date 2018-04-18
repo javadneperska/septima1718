@@ -1,0 +1,17 @@
+Bitterdream 
+Shadow Sceptre
+-----------------------------------------------------------
+One Handed Mace
+Physical Damage: 25~37
+Critical Strike Chance: 6.5%
+Attacks per Second: 1.25
+Requires Level 32, 52 Str, 62 Int
+-----------------------------------------------------------
+15% increased Elemental Damage
+-----------------------------------------------------------
+Socketed Gems are Supported by level 1 Hypothermia
+Socketed Gems are Supported by level 1 Ice Bite
+Socketed Gems are Supported by level 1 Cold Penetration
+Socketed Gems are Supported by level 1 Mana Leech
+Socketed Gems are Supported by level 10 Added Cold Damage
+Socketed Gems are Supported by level 1 Reduced Mana

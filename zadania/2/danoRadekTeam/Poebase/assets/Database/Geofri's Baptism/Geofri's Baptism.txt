@@ -1,0 +1,16 @@
+Geofri's Baptism 
+Brass Maul
+------------------------------------------------
+Two Handed Mace
+Physical Damage: 126~189
+Elemental Damage: 11~23
+Critical Strike Chance: 5%
+Attacks per Second: 1.10
+Requires Level 27, 92 Str
+------------------------------------------------
+20% increased Stun Duration on enemies
+------------------------------------------------
+200% increased Physical Damage 
+Adds 11~23 Cold Damage 
+(10 to 20)% increased Stun Duration on enemies 
+Never deal Critical Strikes
