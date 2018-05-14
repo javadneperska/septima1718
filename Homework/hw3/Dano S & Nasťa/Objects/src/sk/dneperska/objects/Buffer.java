@@ -8,11 +8,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Buffer {
-    private String path = "C:\\Users\\Peter\\Desktop\\File.txt";
-    FileReader fr;
     public String [][] myArray = new String[4][4];
-
-
     public void read() {
         try {
             Scanner sc = new Scanner(new BufferedReader(new FileReader(System.getProperty("user.home") +"\\Documents\\GitHub\\septima1718\\Homework\\hw3\\Dano S & Nasťa\\Objects\\input.txt")));
