@@ -6,7 +6,6 @@ public class Circle {
     public Circle(double size1) {
         this.size1 = size1;
 
-
     }
 
 
