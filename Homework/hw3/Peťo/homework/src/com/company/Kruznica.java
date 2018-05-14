@@ -6,4 +6,9 @@ public class Kruznica {
 
         return 2*Math.PI*a;
     }
+    public double countObsah(double a){
+
+
+        return Math.PI*(a*a);
+    }
 }

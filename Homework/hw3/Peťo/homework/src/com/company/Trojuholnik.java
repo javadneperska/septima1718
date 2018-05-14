@@ -5,4 +5,8 @@ public class Trojuholnik {
 
         return a+b+c;
     }
+    public double countObsah(double a,double b,double c){
+        double s = (a+b+c)/2;
+        return Math.sqrt(s*(s-a)*(s-b)*(s-c));
+    }
 }

@@ -6,6 +6,12 @@ public class Stvorec {
 
 
 
-return a*a;
+return 4*a;
+    }
+    public double countObsah(double a){
+
+
+
+        return a*a;
     }
 }
