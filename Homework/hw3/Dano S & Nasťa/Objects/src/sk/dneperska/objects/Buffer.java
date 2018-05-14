@@ -21,11 +21,8 @@ public class Buffer {
                     for(int k=0; k<myArray.length; k++){
                         for(int l=0; l<myArray.length; l++){
                             if(myArray[k][l]== null){
-
                                 myArray[k][l]="0";
                             }
-
-
                         }
                     }
                 }
