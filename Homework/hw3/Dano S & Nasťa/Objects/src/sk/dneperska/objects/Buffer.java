@@ -11,7 +11,7 @@ public class Buffer {
     public String [][] readArray = new String[4][4];
     public void read() {
         try {
-            Scanner sc = new Scanner(new BufferedReader(new FileReader(System.getProperty("user.home") +"\\Documents\\GitHub\\septima1718\\Homework\\hw3\\Dano S & Nasťa\\Objects\\input.txt")));
+            Scanner sc = new Scanner(new BufferedReader(new FileReader("input.txt")));
             while(sc.hasNextLine()) {
                 for (int i = 0; i< readArray.length; i++) {
                     String[] line = sc.nextLine().trim().split(",");
