@@ -1,14 +1,13 @@
 package sk.dneperska.objects;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Buffer {
     public String [][] readArray = new String[4][4];
+    private String savingPoint;
+
     public void read() {
         try {
             Scanner sc = new Scanner(new BufferedReader(new FileReader("input.txt")));
@@ -29,9 +28,15 @@ public class Buffer {
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
         System.out.println(Arrays.deepToString(readArray));
+    }
+
+
+    public void write(int i ,double circuit, double capacity) throws IOException {
+        PrintWriter out=new PrintWriter(new BufferedWriter(new FileWriter("output.txt",true)));
+        savingPoint = readArray[i][0];
+        out.println(savingPoint+"," + circuit + "," + capacity);
+        out.flush();
     }
 }

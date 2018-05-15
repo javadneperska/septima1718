@@ -5,6 +5,8 @@ public class Rectangle {
     private double size1;
     // second size = druhy rozmer
     private double size2;
+    protected static double circuit;
+    protected static double capacity;
 
     // constructor
     public Rectangle(double size,double size2) {
@@ -15,12 +17,14 @@ public class Rectangle {
     // capacity = obsah
     public double capacity(){
         double result = size1*size2;
+        capacity = result;
         return result;
     }
 
     // circuit = obvod
     public double circuit(){
         double result = 2*(size1+size2);
+        circuit = result;
         return result;
     }
 
