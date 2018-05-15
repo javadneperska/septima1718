@@ -1,0 +1,4 @@
+štvorec,4
+obdåžnik,7,5
+trojuholník,2,5,9
+kruh,4
