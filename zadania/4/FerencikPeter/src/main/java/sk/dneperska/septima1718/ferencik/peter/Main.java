@@ -7,5 +7,6 @@ public class Main {
     Zakaznik fero = new Zakaznik("Frantisek","Slovak");
     Zakaznik mato = new Zakaznik("Martin","Matra");
     Zakaznik jozef = new Zakaznik("Jozef","Samotar");
+        System.out.println(Zakaznik.number_customers);
     }
 }
