@@ -1,5 +1,7 @@
-**code compilation:**
-mvn clean install
+Code
 
-clean:
-mvn clean 
+**clean**:
+    mvn clean 
+
+**install**:
+    mvn clean install
