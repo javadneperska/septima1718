@@ -1,9 +1,16 @@
 
 public class Zakaznik {
+
+    public Zakaznik(String meno, String priezvisko) {
+        this.meno = meno;
+        this.priezvisko = priezvisko;
+        
+        pocetZakaznikov++;
+    }
     private String meno;
     private String priezvisko;
     
-    public static pocetZakaznikov=0;
+    public static int pocetZakaznikov=0;
 
     public String getMeno() {
         return meno;
