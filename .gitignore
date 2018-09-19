@@ -88,3 +88,4 @@ fabric.properties
 *.tar.gz
 *.rar
 
+/zadania/4/PopovicMaros/JavaApplication2/nbproject/private/
