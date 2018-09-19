@@ -8,6 +8,7 @@ public class Main {
 
         System.out.println("Name: " + dano.getFirstName() +"\n"+"Surname: " + dano.getLastName());
         System.out.println("Name: " + ferok.getFirstName() +"\n"+"Surname: " + ferok.getLastName());
+        System.out.println("-----------------------------------------");
         System.out.println("Number of customers : " +Customer.pocet);
     }
 }
