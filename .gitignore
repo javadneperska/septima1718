@@ -88,9 +88,3 @@ fabric.properties
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-/TEST/TEST_INF/nbproject/private/
-/TEST/TEST_INF/build/
-Homework/hw3/Dano S & Nasťa/Objects/.idea/workspace.xml
-/zadania/4/PopovicMaros/JavaApplication1/nbproject/private/
