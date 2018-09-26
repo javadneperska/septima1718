@@ -1,0 +1,3 @@
+clean:
+	rm -rvf */.idea
+
