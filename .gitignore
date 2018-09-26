@@ -92,4 +92,10 @@ fabric.properties
 *.tar.gz
 *.rar
 
+<<<<<<< HEAD
+/zadania/5A/SedlakRadek/target/
+/zadania/5/SedlakRadek/ad/nbproject/private/
+/zadania/5/SedlakRadek/ad/build/
+=======
 /zadania/5A/HunorRadovan/target/
+>>>>>>> a797a93199d7df384f4bac2adbaabb7d349bf2ff
