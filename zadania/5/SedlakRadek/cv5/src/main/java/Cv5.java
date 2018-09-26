@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package main.java;
+package cv5;
 
 /**
  *
  * @author Žiak
  */
-public class JavaApplication6 {
+public class Cv5 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("kkk");
+        // TODO code application logic here
     }
     
 }
