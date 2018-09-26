@@ -92,3 +92,4 @@ fabric.properties
 *.tar.gz
 *.rar
 
+/zadania/5A/HunorRadovan/target/
