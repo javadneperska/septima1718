@@ -1,8 +1,8 @@
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 .idea/**
-zadania/4/**/.idea/**
-zadania/4/**/*.im*
+zadania/*/**/.idea/**
+zadania/*/**/*.im*
 
 # User-specific stuff
 .idea/**/workspace.xml
@@ -88,10 +88,3 @@ fabric.properties
 *.tar.gz
 *.rar
 
-<<<<<<< HEAD
-/zadania/4/SedlakRadek/Zakaznici/nbproject/private/
-=======
-/zadania/4/PopovicMaros/JavaApplication2/nbproject/private/
-/zadania/4/PopovicMaros/target/
->>>>>>> cec2a3a374c8ec2c08939b45da07e4457f2eee6a
-/zadania/5/SedlakRadek/JavaApplication6/nbproject/private/
