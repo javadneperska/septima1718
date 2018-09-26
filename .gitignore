@@ -92,3 +92,6 @@ fabric.properties
 *.tar.gz
 *.rar
 
+/zadania/5A/SedlakRadek/target/
+/zadania/5/SedlakRadek/ad/nbproject/private/
+/zadania/5/SedlakRadek/ad/build/
