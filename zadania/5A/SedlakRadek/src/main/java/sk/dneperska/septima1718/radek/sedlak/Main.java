@@ -1,4 +1,4 @@
-package sk.dneperska.septima1718.daniel.slanina;
+package sk.dneperska.septima1718.radek.sedlak;
 
 public class Main {
 
