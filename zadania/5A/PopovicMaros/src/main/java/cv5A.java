@@ -8,8 +8,8 @@
  *
  * @author Žiak
  */
-public class NewClassSix {
-        public static void main(String[] args){
-            System.out.println("cs");
-        }
+public class cv5A {
+    public static void main(String[] args){
+        
+    }
 }
