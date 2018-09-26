@@ -1,6 +1,6 @@
 package main.java;
 import java.util.Scanner;
-public class JavaApplication2 {
+public class JavaApplication3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Say Hi");
