@@ -8,8 +8,8 @@
  *
  * @author Žiak
  */
-public class Main {
+public class NewClassSix {
         public static void main(String[] args){
-            System.out.println("cc");
+            System.out.println("cs");
         }
 }
