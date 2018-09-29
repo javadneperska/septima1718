@@ -9,32 +9,48 @@ import java.util.Scanner;
 public class Main {
     private static double []numberArray;
     static double sum = 0;
+   static boolean cont = true;
     public static void main(String [] args){
-decide();
+        while (cont = true) {
+            decide();
 
+            System.out.println("Do you want to continue?(y/n)");
+            Scanner sc = new Scanner(System.in);
+            String d = sc.next();
+            if (d.equals("y")) {
+
+            } else {
+                System.out.println("Thanks for using our program!");
+                System.exit(1);
+            }
+        }
 
     }
 
     public static void decide(){
-        System.out.println("1-sum numbers from user ");
-        System.out.println("2-sum numbers from file ");
-        System.out.println("Anything else - exit program ");
-        int decision = 0;
-        Scanner s = new Scanner(System.in);
-        decision = s.nextInt();
-        switch (decision) {
-            case 1:
-                keyboardLoader();
-                break;
-            case 2:
-                fileLoader();
-                break;
-            default:
-                System.out.printf("Thanks for using");
-                System.exit(0);
 
-                break;
-        }
+
+            System.out.println("1-sum numbers from user ");
+            System.out.println("2-sum numbers from file ");
+            System.out.println("Anything else - exit program ");
+            int decision = 0;
+            Scanner s = new Scanner(System.in);
+            decision = s.nextInt();
+            switch (decision) {
+                case 1:
+                    keyboardLoader();
+
+                    break;
+                case 2:
+                    fileLoader();
+                    break;
+                default:
+                    System.out.printf("Thanks for using");
+                    System.exit(0);
+
+                    break;
+            }
+
     }
 
     private static void fileLoader() {
@@ -59,6 +75,7 @@ decide();
                     }
                 }
                 System.out.println("Sum of these numbers is:"+sum);
+                sum = 0;
             }
 
             }
@@ -87,5 +104,6 @@ decide();
             }
         }
         System.out.println("Sum of numbers is: "+sum);
+        sum = 0;
     }
 }
