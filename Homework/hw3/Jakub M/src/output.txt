@@ -1,8 +1,0 @@
-Obvod štvorca 16.0
-Obsah štvorca: 16.0
-Obvod obdĺžnika: 24.0
-Obsah obdĺžnika: 35.0
-Obvod trojuholníka: 16.0
-Obsah trojuholníka: NaN
-Obvod kruhu: 25.132741228718345
-Obsah kruhu: 50.26548245743669

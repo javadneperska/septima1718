@@ -1,1 +1,0 @@
-Vytvorte 3d pole, ktore nacita nahodne cisla od 1-15 a scita ich  a vynasobi.

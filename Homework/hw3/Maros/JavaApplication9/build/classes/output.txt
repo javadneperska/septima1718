@@ -1,8 +1,0 @@
-square Obvod: 20.0
-square Obsah: 25.0
-rectangle Obvod: 18.0
-rectangle Obsah: 20.0
-triangle Obvod: 9.0
-triangle Obsah: 2.9047375096555625
-circle Obvod: 18.84955592153876
-circle Obsah: 28.274333882308138

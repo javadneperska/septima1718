@@ -1,4 +1,0 @@
-stvorec,4
-obdlznik,7,5
-trojuholnik,2,5,9
-kruh,4
