@@ -23,7 +23,7 @@ public class Main {
                 } while(number != 0); //just repeat cycle as long as number is not zero
 
                 System.out.println("Sum is : " + sum);
-               
+
                 break;
             case 2:
                 File f = new File("input.txt");
