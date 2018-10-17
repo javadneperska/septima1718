@@ -1,4 +1,0 @@
-stvorec,5,0,0
-obdlznik,3,6,0
-trojuholnik,4,5,6
-kruznica,5,0,0

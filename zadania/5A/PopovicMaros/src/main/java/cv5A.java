@@ -19,6 +19,10 @@ import java.util.Scanner;
  * @author Žiak
  */
 public class cv5A {
+    
+       public static List<Double> cisla = new ArrayList<>();
+       public static Scanner sc = new Scanner(System.in);
+       
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Stlac 1 pre vlastny vyber \nStlac 2 pre vyber zo suboru\n");
@@ -31,9 +35,6 @@ public class cv5A {
    // -------------------------
    public static void vlastnyVyber(){
        String riadok;
-       List<Double> cisla = new ArrayList<>();
-       Scanner sc = new Scanner(System.in);
-       
        System.out.println("Zadavaj cisla, ak chces skoncit zadaj \"x\" ");
        while(!"x".equals(riadok = sc.nextLine())){
            cisla.add(Double.parseDouble(riadok));
@@ -45,27 +46,19 @@ public class cv5A {
 
     private static void suborVyber() {
         System.out.println("Zadaj meno suboru (napriklad input.csv):");
-        Scanner sc = new Scanner(System.in);
-        List<Double> cisla = new ArrayList<>();
-                try {
+            try {
 
-            File f = new File("src\\main\\java\\"+sc.nextLine());
+            File f = new File(System.getProperty("user.home")+"\\"+sc.nextLine());
             BufferedReader b = new BufferedReader(new FileReader(f));
-
             String readLine = "";
-
-            System.out.println("Reading file using Buffered Reader");
-
-
-                List<String> items = Arrays.asList(b.readLine().split("\\s*,\\s*"));
-                
-                    for (String item : items) {
-                        cisla.add(Double.parseDouble(item));
-                    }
-                    scitaj(cisla);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+            List<String> items = Arrays.asList(b.readLine().split("\\s*,\\s*"));
+            for (String item : items) {
+                cisla.add(Double.parseDouble(item));
+            }
+            scitaj(cisla);
+                 } catch (IOException e) {
+                     e.printStackTrace();
+                   }
         
     }
     // -------------------------
