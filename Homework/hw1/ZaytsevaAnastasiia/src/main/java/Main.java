@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Total memory (bytes): " + Runtime.getRuntime().totalMemory());
 
         File[] roots = File.listRoots();
-        
+
         for (File root : roots) { System.out.println("File system root: " + root.getAbsolutePath());
             System.out.println("Total space (bytes): " + root.getTotalSpace());
             System.out.println("Free space (bytes): " + root.getFreeSpace());
