@@ -95,6 +95,50 @@ public class DatabaseOperations {
         }
     }
 
+    //Get List of memory modules from database based on it's type
+    public static void getDiskType() {
+
+        try{
+            outLine = "";
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection con=DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/components","root","");
+            Statement stmt=con.createStatement();
+            ResultSet rs=stmt.executeQuery("select type from drive");
+            while(rs.next())
+                outLine += (rs.getString(1)+" or ");
+            outLine = removeLastChars(outLine);
+            System.out.println("--> " +outLine);
+            con.close();
+        }
+        catch(Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    //Get List of disk drives from database based on user's selection
+    public static void getDiskInfo(String select, String select2, String select3) {
+
+        try{
+            outLine = "";
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection con=DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/components","root","");
+            Statement stmt=con.createStatement();
+            ResultSet rs=stmt.executeQuery("select "+select+" from drive where "+select2+" like "+select3);
+            while (rs.next())
+                outLine += (rs.getString(1)+" or ");
+            outLine = removeLastChars(outLine);
+            System.out.println("--> " +outLine);
+            con.close();
+        }
+        catch(Exception e) {
+            System.out.println(ANSI_RED +"Bad choice ! choose drive again !" +ANSI_RESET);
+            System.out.println("---------------------------------------");
+            Utils.ramSelect();
+        }
+    }
+
     //Just to ease the visibility of UI
     private static String removeLastChars(String str) {
         return str.substring(0,str.length()-3);

@@ -8,6 +8,9 @@ public class Main {
         System.out.println("-------------------------------------------------------------");
         System.out.println("Now let's proceed to RAM selection");
         Utils.ramSelect();
+        System.out.println("Ok, now you have to choose from disk drives !");
+        Utils.driveSelect();
+
 
     }
 }

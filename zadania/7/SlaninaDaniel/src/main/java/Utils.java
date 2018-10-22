@@ -3,12 +3,13 @@ import java.util.Scanner;
 
 public class Utils {
 
-    static final Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
     static String userSelectOLD = "";
     static String userSelectNew = "";
     static String userSelect2 = "";
     static String selectedProcessor ="";
     static String selectedRAM = "";
+    static String selectedDrive = "";
 
     public static void processorSelect() {
         System.out.println("Select, how many threads you want CPU to have from available :");
@@ -48,38 +49,25 @@ public class Utils {
         userSelectNew= "size";
         DatabaseOperations.getRamInfo(userSelectNew,userSelectOLD,userSelect2);
         System.out.println("Select which one you want :");
-        userSelect2 = (","+sc.next());
+        userSelect2 = (sc.next()+" and speed like "+userSelect2);
         System.out.println("For selected  type of RAM, speed (Mhz) and size of RAM suit these memories :");
-        userSelectOLD = "type,speed,size";
+        userSelectOLD = "size";
         userSelectNew= "name";
         DatabaseOperations.getRamInfo(userSelectNew,userSelectOLD,userSelect2);
         System.out.println("Select which one you want :");
-        userSelect2 = ("\""+sc.next()+"\"") ;
+        sc.nextLine();
+        userSelect2 = ("\""+sc.nextLine()+"\"");
+        System.out.println(userSelect2);
+        userSelectOLD = "name";
+        userSelectNew= "name";
         DatabaseOperations.getRamInfo(userSelectNew,userSelectOLD,userSelect2);
         selectedRAM = (DatabaseOperations.outLine);
         System.out.println("You have selected : " +selectedRAM+ " memory");
 
     }
 
-    /*TODO - ADD ARGUMENTS TO SELECT METHODS FROM DB
-    *  it's working  this way ->   select * from table where '' like '' and '' like ''
-    */
+    public static void driveSelect() {
+    //TODO - drive selection, graphic card selection and price calculator !
+    }
 
-
-
-//    static void endingMessage(){
-//        System.out.println("----------------------------------------------");
-//        System.out.println("Do you want to continue (Y/N) ?");
-//        String con = sc.next();
-//        continueLoop(con);
-//    }
-//
-//    private static void continueLoop(String con) {
-//        if (con.equals("Y") || con.equals("y")){
-//        }
-//        else{
-//            System.out.println("Turning off, Thanks for using !");
-//            System.exit(0);
-//        }
-//    }
 }
