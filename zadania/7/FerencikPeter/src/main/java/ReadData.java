@@ -1,16 +1,16 @@
 
 
 import java.io.BufferedReader;
-
+import java.util.*;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class ReadData {
- public static String RAM [][] = new String [3][4];
- public static  String CPU [][] = new String [3][4];
- public static String Disc [][] = new String [3][3];
- public static String GC [][] = new String [3][3];
-    public static void readRAM(){
+public static ArrayList<String[]> RAM = new ArrayList<String[]>();
+public static  ArrayList<String[]> CPU = new ArrayList<String[]>();
+public static ArrayList<String[]> Disc = new ArrayList<String[]>();
+public static ArrayList<String[]> GC = new ArrayList<String[]>();
+public static void readRAM(){
 
       try {
           FileReader fr = new FileReader("C:\\Users\\Peter\\Desktop\\Specifikacie\\RAM.txt");
@@ -19,11 +19,10 @@ public class ReadData {
           int j = 0;
           while ((line=br.readLine()) != null){
               String[] field = line.split(",");
-              for (int i = 0; i < field.length; i++) {
-                  RAM[j][i] = field[i];
+
+                  RAM.add(field);
                   //System.out.println(RAM[j][i]);
-              }
-            j++;
+
           }
       }
       catch(IOException e){
@@ -37,14 +36,13 @@ public class ReadData {
             FileReader fr = new FileReader("C:\\Users\\Peter\\Desktop\\Specifikacie\\Procesor.txt");
             BufferedReader br = new BufferedReader(fr);
             String line =null;
-            int j = 0;
+
             while ((line=br.readLine()) != null){
                 String[] field = line.split(",");
-                for (int i = 0; i < field.length; i++) {
-                    CPU[j][i] = field[i];
+
+                    CPU.add(field);
                    // System.out.println(CPU[j][i]);
-                }
-                j++;
+
             }
         }
         catch(IOException e){
@@ -53,20 +51,19 @@ public class ReadData {
         }
 
     }
-    public static void ReadDisc (){
+    public static void readDisc (){
 
             try {
                 FileReader fr = new FileReader("C:\\Users\\Peter\\Desktop\\Specifikacie\\Disk.txt");
                 BufferedReader br = new BufferedReader(fr);
                 String line =null;
-                int j = 0;
                 while ((line=br.readLine()) != null){
                     String[] field = line.split(",");
-                    for (int i = 0; i < field.length; i++) {
-                        Disc[j][i] = field[i];
+
+                        Disc.add(field);
                         //System.out.println(GC[j][i]);
-                    }
-                    j++;
+
+
                 }
             }
             catch(IOException e){
@@ -78,7 +75,7 @@ public class ReadData {
 
     }
 
-    public static void ReadGC(){
+    public static void readGC(){
         try {
             FileReader fr = new FileReader("C:\\Users\\Peter\\Desktop\\Specifikacie\\Grafika.txt");
             BufferedReader br = new BufferedReader(fr);
@@ -86,11 +83,10 @@ public class ReadData {
             int j = 0;
             while ((line=br.readLine()) != null){
                 String[] field = line.split(",");
-                for (int i = 0; i < field.length; i++) {
-                    GC[j][i] = field[i];
+
+                    GC.add(field);
                    // System.out.println(Disc[j][i]);
-                }
-                j++;
+
             }
         }
         catch(IOException e){
