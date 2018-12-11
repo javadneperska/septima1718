@@ -7,13 +7,13 @@ public class Main {
         System.out.println("-------------------------------------------------------------");
         Utils.processorSelect();
         System.out.println("-------------------------------------------------------------");
-        System.out.println("Now let's proceed to RAM selection");
+        System.out.println("Now let's proceed to RAM selection!");
         Utils.ramSelect();
         System.out.println("-------------------------------------------------------------");
         System.out.println("Ok, now you have to choose from disk drives !");
         Utils.driveSelect();
         System.out.println("-------------------------------------------------------------");
-        System.out.println("And, the last component is graphics card");
+        System.out.println("And, the last component is graphics card!");
         Utils.graphicsCardSelect();
         System.out.println("-------------------------------------------------------------");
         System.out.println("You have selected all necessary components!");
