@@ -92,6 +92,25 @@ fabric.properties
 *.tar.gz
 *.rar
 
+<<<<<<< HEAD
 /zadania/5A/HunorRadovan/target/
 /zadania/7/PopovicMaros/nbproject/private/
 /zadania/7/PopovicMaros/build/
+=======
+<<<<<<< HEAD
+/zadania/5A/SedlakRadek/target/
+/zadania/5/SedlakRadek/ad/nbproject/private/
+/zadania/5/SedlakRadek/ad/build/
+=======
+/zadania/5A/HunorRadovan/target/
+>>>>>>> a797a93199d7df384f4bac2adbaabb7d349bf2ff
+/zadania/5A/SedlakRadek/src/main/java/sk/dneperska/septima1718/radek/sedlak/JavaApplication1/nbproject/private/
+/zadania/5A/SedlakRadek/src/main/java/sk/dneperska/septima1718/radek/sedlak/JavaApplication1/build/
+>>>>>>> 4bd1e2ad68e043b5fb7abefddc15506a3be71156
+/zadania/7/JavaApplication4/nbproject/private/
+/zadania/7/JavaApplication4/build/
+/zadania/7/JavaApplication4/dist/
+/zadania/7/JavaApplication5/nbproject/private/
+/zadania/7/JavaApplication5/build/
+/zadania/7/JavaApplication5/dist/
+/zadania/10/PopovicMaros/target/
