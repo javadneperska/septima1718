@@ -6,6 +6,7 @@ public class NewMain {
 
 
     public static void main(String[] args) {
+        try{
         System.out.println("Choose a month in order");
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
@@ -25,9 +26,13 @@ public class NewMain {
             else {
                 
                
-                System.out.println("Winter");;
+                System.out.println("Winter");
+               
             }
+            
         }
+    }catch(Exception e){
+                System.out.println(e);
+                }
     }
-    
 }
