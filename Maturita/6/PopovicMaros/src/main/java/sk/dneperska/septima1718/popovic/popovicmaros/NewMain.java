@@ -19,7 +19,12 @@ public class NewMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Zadaj poradie mesiaca  ");
-        int mesiac = sc.nextInt();
+       
+        int mesiac;
+        
+        try{
+           mesiac = sc.nextInt();
+       
         String stav = "neexistuje.";
         
         if(1 <= mesiac && mesiac <= 12){
@@ -35,6 +40,10 @@ public class NewMain {
         }
         
         System.out.println("Tento mesiac "+stav);
+        
+                }catch(Exception ex){
+            System.out.println(ex);
+        }
     }
     
 }
