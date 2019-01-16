@@ -1,0 +1,2 @@
+HyperX,16,DDR4,120
+HyperX,8,DDR4,80

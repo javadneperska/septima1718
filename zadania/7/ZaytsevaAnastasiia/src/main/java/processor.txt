@@ -1,0 +1,2 @@
+Intel Core i7,4,3.2,250
+Intel Core i5,2,2.2,140

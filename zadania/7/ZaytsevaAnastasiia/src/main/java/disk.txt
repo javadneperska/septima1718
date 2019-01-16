@@ -1,0 +1,2 @@
+Samsung 860 Evo,SSD,2.5,500GB,100
+Samsung 860 Evo,SSD,2.5,1000GB,200
