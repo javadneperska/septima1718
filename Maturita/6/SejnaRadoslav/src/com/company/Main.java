@@ -8,6 +8,7 @@ public class Main {
         String season;
         System.out.println("Enter any month(1 to 12)");
         Scanner s = new Scanner(System.in);
+       try{
         int entry = s.nextInt();
         switch (entry)
         {
@@ -35,7 +36,12 @@ public class Main {
                 season = "Neexistuje";
         }
         System.out.println("Mesiac je  " + season + ".");
-    }
+       }catch(Exception ex){
+           System.out.println(ex);
+
+
+
+
+       }
 }
-
-
+}
