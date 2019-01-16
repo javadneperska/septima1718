@@ -1,13 +1,14 @@
 
-package javaapplication15;
+package javaapplication16;
 
 import java.util.Scanner;
 
 
-public class JavaApplication15 {
+public class JavaApplication16 {
 
+   
     public static void main(String[] args) {
-     Scanner sc = new Scanner(System.in);
+      Scanner sc = new Scanner(System.in);
         System.out.println("zadaj cislo od ktoreho zacat");
      int x=sc.nextInt();
         System.out.println("zadal cislo do ktoreho ma skoncit");
@@ -20,12 +21,7 @@ public class JavaApplication15 {
 	
 	if( i % 2 == 0| i%7== 0){
 	System.out.print(i + " ");
-        
-        
-        
-        
-        
     }
-    }
+    
 }
-}
+}}
