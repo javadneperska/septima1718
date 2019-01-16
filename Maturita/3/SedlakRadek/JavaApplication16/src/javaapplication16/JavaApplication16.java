@@ -24,7 +24,7 @@ public class JavaApplication16 {
         
         for (int  n : x)
 	if( n % 2 == 0|| n%7== 0){
-	System.out.print(n+ " ");
+	System.out.print(+n+ " ");
     }
     
 }
