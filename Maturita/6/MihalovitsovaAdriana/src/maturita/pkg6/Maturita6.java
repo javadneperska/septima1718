@@ -26,7 +26,8 @@ public class Maturita6 {
 
         
         if(a>12 || a<0){
-            System.exit(a);
+            System.out.println("Invalid");
+            
          }   
         else {
             if(a==1 || a==2 || a==12)
