@@ -19,7 +19,7 @@ public class JavaApplication15 {
 			
 	
 	if( i % 2 == 0| i%7== 0){
-	System.out.print(i + " ");
+	System.out.print(i  " ");
         
         
         
