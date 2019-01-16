@@ -11,12 +11,12 @@ public class JavaApplication17 {
         System.out.println("zadaj cislo od ktoreho chces faktorial");
        Scanner sc = new Scanner(System.in);
        
-          int i,fact=1;  
+          int i,factorial=1;  
   int number=sc.nextInt();   
   for(i=1;i<=number;i++){    
-      fact=fact*i;    
+      factorial=factorial*i;    
       
     }
-        System.out.println(fact);
+        System.out.println(factorial);
 }
 }
