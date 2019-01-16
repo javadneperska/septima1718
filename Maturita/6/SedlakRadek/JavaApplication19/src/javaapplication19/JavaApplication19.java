@@ -10,8 +10,9 @@ public class JavaApplication19 {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         
-        int n=sc.nextInt();
+        
          try {
+             int n=sc.nextInt();
            if( n  < 0|| n>12 ){
              throw new Exception();
             }
