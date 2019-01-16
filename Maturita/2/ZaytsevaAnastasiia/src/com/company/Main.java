@@ -29,14 +29,19 @@ public class Main {
                 System.out.println(i - 2);
                 i = i - 2;
             }
-        } else {
-            i = s % 2 == 0 ? s : s + 1;
+        } //else {
+        //  i = s % 2 == 0 ? s : s + 1;
 
-            while (l - i > 0) {
-                System.out.println(i + 2);
+        while (l - i >= 0) {
+            if (i == 0) {
                 i = i + 2;
+                continue;
             }
 
+            System.out.println(i);
+            i = i + 2;
         }
+
     }
 }
+
