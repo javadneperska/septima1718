@@ -6,22 +6,27 @@ import java.util.Scanner;
 
 public class JavaApplication16 {
 
+    
+
+
    
     public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);
-        System.out.println("zadaj cislo od ktoreho zacat");
-     int x=sc.nextInt();
-        System.out.println("zadal cislo do ktoreho ma skoncit");
-     int limit = sc.nextInt();
+        int[] x= new int [10] ;
+       
+   
 		
-	System.out.println("vsetky parne cisla " + limit);
-		
-	for(int i=x; i <= limit; i++){
-			
 	
-	if( i % 2 == 0| i%7== 0){
-	System.out.print(i + " ");
+		
+	for(int i=0; i < 10; i++){
+                     x[i]  = sc.nextInt();
+	}
+        
+        for (int  n : x)
+	if( n % 2 == 0|| n%7== 0){
+	System.out.print(n+ " ");
     }
     
 }
-}}
+    }
+
