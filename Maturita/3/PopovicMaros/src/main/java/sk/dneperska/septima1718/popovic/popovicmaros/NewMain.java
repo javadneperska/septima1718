@@ -20,12 +20,13 @@ public class NewMain {
         Scanner sc = new Scanner(System.in);
         int[] nums = new int[10];
         
-        System.out.println("Cisla splnajuce podmienky su:");
+        
         for (int i = 0; i < 10; i++) {
             System.out.println("Zadaj "+(i+1)+". cislo");
             nums[i] = sc.nextInt();
         }
         
+        System.out.println("Cisla splnajuce podmienky su:");
         for (int n : nums) {
             if(n%2==0 || n%7==0){
                 System.out.println(n);
