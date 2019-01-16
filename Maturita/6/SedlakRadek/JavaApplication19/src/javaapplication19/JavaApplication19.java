@@ -7,10 +7,14 @@ import java.util.Scanner;
 public class JavaApplication19 {
 
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         
         int n=sc.nextInt();
+         try {
+           if( n  < 0|| n>12 ){
+             throw new Exception();
+            }
         
         if( n  == 1|| n== 2|| n== 12){
 	System.out.print( " tento mesiac je zimny mesiac");
@@ -24,10 +28,14 @@ public class JavaApplication19 {
            if( n  == 9|| n== 10|| n== 11){
 	System.out.print( " tento mesiac je jesenny mesiac");
         }
-         if( n  == 0|| n>12 ){
-             System.out.println("chybne cislo");
-             }
-         }
-    }
-    }
+      } catch (Exception d) {
+
+            System.err.println("zly input ! ");
+
+            System.exit(0);
+
+             }      
+          } }
+    
+    
 
