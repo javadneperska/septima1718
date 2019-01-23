@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Žiak
+ * @author Žiadk
  */
 public class NewMain {
 
