@@ -1,21 +1,33 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package trojuholnikpravo;
 
-/**
- *
- * @author Žiak
- */
-public class Trojuholnikpravo {
+import java.util.Scanner;
 
-    /**
-     * @param args the command line arguments
-     */
+
+public class Trojuholnikpravo {
+    
+ public static void triangle(int n){
+
+        if(n>1){
+            System.out.println("*");
+            String medzery = "";
+            for(int i=0;i<n-2;i++){
+                System.out.println("*"+medzery+"*");
+                medzery+=" ";
+            }
+            for(int i=0;i<n;i++)
+
+                System.out.print("*");
+            }
+           else System.out.println("*");
+}
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+         Scanner sc = new Scanner(System.in);
+        System.out.println("Napíš číslo (velkosť) : ");
+        
+        int n=sc.nextInt();
+triangle(n);
     }
     
 }
