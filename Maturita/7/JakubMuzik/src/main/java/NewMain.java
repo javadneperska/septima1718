@@ -27,24 +27,23 @@ public class NewMain {
 
 
     public static void main(String[] args) {
-        String word="";
+        
     int j;
     char[] chr;
     System.out.println("Zadajte to isté slovo 2x na vypísanie počtu písmen a napísanie slova odzadu:");
     Scanner keyboard = new Scanner(System.in);
-     String str = keyboard.nextLine(); 
+     String word = keyboard.nextLine(); 
          
-        if (str.length()<=4){
+        if (word.length()<=4){
             System.out.println("The word is too short!");
            } else{
                     
                     
         
-      count(str);          
-    word= keyboard.nextLine();
+      count(word);          
     chr= word.toCharArray();
     for (j=word.length()-1; j>=0; j--)
-    System.out.println("The word in reverse is " + (chr[j]) + ".");
+    System.out.print((chr[j]));
     
     }
     }}
