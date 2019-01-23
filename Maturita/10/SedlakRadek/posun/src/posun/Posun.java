@@ -1,21 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package posun;
 
-/**
- *
- * @author Žiak
- */
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
 public class Posun {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-        // TODO code application logic here
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        Scanner in = new Scanner(System.in);
+        System.out.println("Zadajte 7 cisel ");
+
+      try {
+            for (int i = 0; i < 7; i++) {
+                    list.add(in.nextInt());
+
+            } 
+            }
+
+        catch (Exception e) {
+            System.out.println("zle cislo");
+        } 
+
+
+        System.out.println("vase cislo su zmenšené o 1 ");
+      
+        for (Integer integer : list) { 
+            System.out.print(integer-1+" ");
+} 
     }
     
 }
