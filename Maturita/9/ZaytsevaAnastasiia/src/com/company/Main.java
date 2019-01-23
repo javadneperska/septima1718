@@ -19,7 +19,11 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n=sc.nextInt();
-        g(n);
+        if(sc.hasNextInt()) {
+           int n = sc.nextInt();
+            g(n);
+        }
+
+
     }
 }
