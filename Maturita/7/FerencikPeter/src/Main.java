@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String word = sc.next();
         int length = word.length();
-        if(length < 4){
+        if(length <= 4){
 
             System.out.println("The word is not long enough!");
         }
