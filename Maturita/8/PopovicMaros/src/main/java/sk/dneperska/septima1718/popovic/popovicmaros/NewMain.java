@@ -29,9 +29,9 @@ public class NewMain {
         ArrayList<Integer> nums = new ArrayList<Integer>(20);
         while(counter < 20){
             counter++;
-            rand = rn.nextInt(99)+1;
+            rand = rn.nextInt(99+1)+1;
                 while(nums.indexOf(rand)!=(-1)){
-                    rand = rn.nextInt(99)+1;
+                    rand = rn.nextInt(99+1)+1;
                 }
             nums.add(rand);
         }
