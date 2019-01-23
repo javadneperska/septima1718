@@ -17,23 +17,27 @@ import java.util.Scanner;
  */
 public class Maturita8 {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         int size = 20;
 
         ArrayList<Integer> list = new ArrayList<Integer>(size);
         for(int i = 1; i <= size; i++) {
-            list.add(i);
+          
         }
 
         Random rand = new Random();
-        while(list.size() > 0) {
-            int index = rand.nextInt(list.size());
-            System.out.println(list.remove(index));
+        while(list.size() < size) {
+            int i = rand.nextInt(20);
+           if(!list.contains(i)){
+                list.add(i);
+           System.out.println(i);
+          
+                }
+              
         }
 
+       
         System.out.println("Enter a number: ");
         Scanner sc = new Scanner(System.in);
         if (sc.hasNextInt())  {
