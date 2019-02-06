@@ -18,9 +18,13 @@ public class NewMain {
      */
     public static void main(String[] args) {
        
-        Scanner sc = new Scanner(System.in);
-      //  int suma = sc.nextInt();
-      int suma = 1100;
+Scanner sc = new Scanner(System.in);
+        int suma = 0;
+        try{ 
+         suma = sc.nextInt();
+        }catch(Exception ex){
+            System.out.println(ex);
+        }
       
       int bankovky[] = new int[]{500,200,100,50,20,10,5,2,1};
         for (int i : bankovky) {
