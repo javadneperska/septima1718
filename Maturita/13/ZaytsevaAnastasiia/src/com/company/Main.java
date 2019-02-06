@@ -8,6 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        while (!sc.hasNextDouble()) {
+            System.out.println("Input is not a number.");
+            sc.nextLine();
+        }
         System.out.println("Enter the price: ");
         for (int i =0; i<5; i++){
             double n = sc.nextDouble();
