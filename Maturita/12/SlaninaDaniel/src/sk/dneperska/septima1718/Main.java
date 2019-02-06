@@ -14,7 +14,7 @@ public class Main {
         try {
             input = sc.nextInt();
         } catch (Exception e) {
-            System.err.println("NOT A INTEGER !!");
+            System.err.println("Wrong or mismatched input  !!");
             System.exit(1);
         }
 
