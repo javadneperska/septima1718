@@ -19,7 +19,7 @@ public class Maturita12 {
     public static void main(String[] args) {
  
        Scanner sc = new Scanner(System.in);
-                if(sc.hasNextInt()) {
+        if(sc.hasNextInt()) {
        int amount = sc.nextInt();
        
      
@@ -39,7 +39,7 @@ public class Maturita12 {
         System.out.println("Bank notes :"); 
         for (int i = 0; i < 7; i++) { 
             if (noteCounter[i] != 0) { 
-                System.out.println(notes[i]); 
+                System.out.println(notes[i] + " x " + noteCounter[i]); 
             } 
         }
         
@@ -58,9 +58,12 @@ public class Maturita12 {
         System.out.println("Change :"); 
         for (int i = 0; i < 2; i++) { 
             if (changeCounter[i] != 0) { 
-                System.out.println(change[i]); 
+                System.out.println(change[i] + " x " + changeCounter[i]); 
             } 
         } 
+        
+        
+        
         }
        else  { 
            System.out.println("Invalid");
