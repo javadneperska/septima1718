@@ -5,7 +5,7 @@ public class Satmarik {
         Scanner sc = new Scanner(System.in);
         System.out.println("Napíšte ľubovoľnú sumu : ");
 
-        if(sc.hasNextDouble()){
+        if(sc.hasNextInt()){
             int suma = sc.nextInt();
             int prm = suma;
             scitajSumu(suma,prm);
