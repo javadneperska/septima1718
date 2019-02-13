@@ -8,7 +8,7 @@ public class MuzikJakub {
 
 
     public static void main(String[] args) {
-             Scanner scan = new Scanner(System.in); 
+           
 Scanner in = new Scanner(System.in);
         
        
