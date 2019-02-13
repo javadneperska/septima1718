@@ -34,7 +34,7 @@ public class NewMain {
         {
             System.out.println(Integer.parseInt(Character.toString(str.charAt(i))));
             
-            if((int)str.charAt(i)>najvyssie){
+            if(Integer.parseInt(Character.toString(str.charAt(i)))>najvyssie){
                 najvyssie = Integer.parseInt(Character.toString(str.charAt(i)));
             }
           //  cisla[i] = str.charAt(i);
