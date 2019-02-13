@@ -16,6 +16,10 @@ public class Main {
     }
     static void output(int input){
         String check[] = Integer.toString(input).split("");
+        if(check.length<3){
+            System.out.println("Must be longer than 2");
+            System.exit(0);
+        }
         int control = 0;
         int control2 = 0;
         for(int x = 0;x<check.length;x++){
