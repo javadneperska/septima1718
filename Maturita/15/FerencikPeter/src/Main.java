@@ -4,19 +4,17 @@ public class Main {
     public static void main(String args[]){
         Scanner in = new Scanner(System.in);
         int i = 0;
-
+        System.out.print("Enter a number of at least 3 digits: ");
+        if (in.hasNextInt()) {
         while (i <= 100) {
 
-            System.out.print("Enter a number of at least 3 digits: ");
 
-
-            if (in.hasNextInt()) {
                 i = in.nextInt();
                 if(i >= 100) {
                     highestdigit(i);
+                    System.exit(2);
                 }
             }
-
 
 
 
