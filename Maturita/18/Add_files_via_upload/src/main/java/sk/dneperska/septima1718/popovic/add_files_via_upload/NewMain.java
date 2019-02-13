@@ -20,7 +20,7 @@ public class NewMain {
         int[] znamky = new int[10];
         Scanner sc = new Scanner(System.in);
         int znamka;
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < 10; i++) {
             if(!sc.hasNextInt()){
                 System.out.println("NAN");
                 System.exit(i);
