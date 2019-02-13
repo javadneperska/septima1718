@@ -12,9 +12,12 @@ public class Main {
 
             if (in.hasNextInt()) {
                 i = in.nextInt();
+                if(i >= 100) {
+                    highestdigit(i);
+                }
             }
 
-           highestdigit(i);
+
 
 
         }
@@ -28,7 +31,6 @@ public class Main {
                 int digit = n % 10;
 
                 max = Math.max(max, digit);
-                min = Math.min(min, digit);
 
                 n /= 10;
             }
