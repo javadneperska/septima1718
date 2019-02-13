@@ -142,6 +142,12 @@ fabric.properties
 /Maturita/10/SedlakRadek/posun/nbproject/private/
 /Maturita/9/SedlakRadek/trojuholnikpravo/nbproject/private/
 /Maturita/10/SedlakRadek/posun/build/
+<<<<<<< HEAD
+/Maturita/9/SedlakRadek/cvic 15/nbproject/private/
+/Maturita/9/SedlakRadek/cvic 15/build/
+/Maturita/9/SedlakRadek/cvic 16/nbproject/private/
+/Maturita/9/SedlakRadek/cvic 16/build/
+=======
 /Maturita/11/11/nbproject/private/
 /Maturita/11/Radek Sedlak/11/nbproject/private/
 /Maturita/11/Radek Sedlak/12/nbproject/private/
@@ -149,3 +155,4 @@ fabric.properties
 /Maturita/12/Radek Sedlak/JavaApplication9/nbproject/private/
 /Maturita/13/Radek Sedlak/JavaApplication10/nbproject/private/
 /Maturita/13/Radek Sedlak/JavaApplication10/build/
+>>>>>>> 51592cb8f92b0222d92b83bb497293c75888b7cb
