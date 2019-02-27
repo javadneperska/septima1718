@@ -1,0 +1,7 @@
+Ahojte toto je moja testovacia veta!
+Ahojte
+toto
+je
+moja
+testovacia
+veta!

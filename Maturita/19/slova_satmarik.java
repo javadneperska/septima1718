@@ -1,13 +1,15 @@
 public class slova_satmarik {
 
+    public static void main(String[] args) {
+        String text = "Dnes máme telesnú výchovu!";
+        String[] rozdelene = text.split(" ");
 
-    public class Main {
+        if (text.isEmpty()) {
+            System.out.println("Neplatný vstup. (Text je prázdny!)");
+        } else {
+            for (Integer position = 0; position < rozdelene.length; position++) {
 
-        public void main(String[] args) {
-            String veta = "Dnes mame telesnú výchovu!";
-            String [] slova = veta.split(" ");
-            for(int i = 0;i<slova.length;i++){
-                System.out.println(slova[i]);
+                System.out.println(rozdelene[position]);
             }
         }
     }
