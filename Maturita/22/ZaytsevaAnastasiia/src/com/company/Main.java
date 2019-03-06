@@ -12,12 +12,14 @@ public class Main {
         System.out.println("Enter n: ");
 	int n = sc.nextInt();
         for(int y=1;y<=n;y++){
-            for(int space=n;space>y;space--)
+            for(int space=n;space>y;space--) {
                 System.out.print(" ");
-            bw.write(" ");
-            for(int x=1;x<=y;x++)
+                bw.write(" ");
+            }
+            for(int x=1;x<=y;x++) {
                 System.out.print("*");
-            bw.write("*");
+                bw.write("*");
+            }
             bw.newLine();
             System.out.println();
         }
