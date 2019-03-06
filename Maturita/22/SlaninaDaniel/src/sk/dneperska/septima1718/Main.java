@@ -15,7 +15,7 @@ public class Main {
             System.out.println("Input length of triangle (INTEGER)");
             input = sc.nextInt();
         } catch (Exception e) {
-            System.err.println("Missmatched or wrong input !");
+            System.err.println("Mismatched or wrong input !");
             System.exit(-404);
         }
 
