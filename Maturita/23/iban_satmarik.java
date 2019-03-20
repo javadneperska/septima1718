@@ -5,12 +5,22 @@ public class iban_satmarik {
     public static void main (String args[]){
 
             String kod_uctu = null; //cez scanner
-            String kod_banky= "0900";
+            String kod_banky= null;
             String kod_krajiny = "2820";
             //------------------------------------------------------
             Scanner sc = new Scanner(System.in);
-            System.out.println("Číslo účtu : ");
+            System.out.println("Číslo účtu : (napr. : 1234567890) ");
             kod_uctu = sc.next();
+
+            Scanner sc2 = new Scanner(System.in);
+            System.out.println("Kód banky (napr. : 0900) : ");
+            kod_banky = sc2.next();
+
+            Scanner sc3 = new Scanner(System.in);
+            System.out.println("Kód krajiny (napr. : SK = 2820) : ");
+            kod_krajiny = sc3.next();
+
+
             //------------------------------------------------------
             if(kod_uctu.length() > 10){
                 System.out.println("Chybné číslo účtu!");
@@ -24,7 +34,7 @@ public class iban_satmarik {
                 }
             }
             //------------------------------------------------------
-            System.out.println(kod_uctu);
+            System.out.println("Kód účtu :" + kod_uctu);
             String Bban = kod_banky+"000000"+kod_uctu+kod_krajiny+"00";
 
             int c_num = 98-(mod(Bban,97));
@@ -33,7 +43,7 @@ public class iban_satmarik {
                 num = "0"+num;
             }
 
-            System.out.println(num);
+            System.out.println("Kontrolný kód :" +num);
             String IBAN = "SK"+num+kod_banky+"000000"+kod_uctu;
             System.out.println(IBAN);
         }
