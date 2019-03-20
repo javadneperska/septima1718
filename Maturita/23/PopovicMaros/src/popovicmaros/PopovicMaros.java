@@ -15,7 +15,17 @@ public class PopovicMaros {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String IBAN = "SK68 0720 0002 8919 7061 6353";
+        Scanner sc = new Scanner(System.in);
+        String IBAN = "";
+        System.out.println("Zadajte kod krajiny (68)");
+        IBAN+= sc.next();
+        System.out.println("Zadajte kod banky (0720)");
+        IBAN+= sc.next();
+        System.out.println("Zadajte prefix (000289)");
+        IBAN+= sc.next();
+        System.out.println("Zadajte zakladne cislo uctu (1970616353)");
+        IBAN+= sc.next();
+        
         IBAN = IBAN.replace(" ", "");
         IBAN = (IBAN.substring(4)+IBAN.substring(0,4));
         IBAN = IBAN.replace("SK", "2820");
