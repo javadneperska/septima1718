@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         String kodKrajny = "2820";
 
+
        Scanner sc = new Scanner(System.in);
 
         System.out.println("Bank (4 digit number): ");
@@ -16,6 +17,14 @@ public class Main {
             System.out.println("Sorry, you entered the wrong ammount of digits");
             System.exit(404);
         }
+        System.out.println("Prefix (6-digit number): ");
+        String prefix=sc.nextLine();
+        if(!(prefix.length()==6))
+        {
+            System.out.println("Sorry, you entered the wrong ammount of digits");
+            System.exit(404);
+        }
+
         System.out.println("Account (10 digit number): ");
         String kodUctu = sc.nextLine();
         if(!(kodUctu.length()==10))
@@ -24,14 +33,14 @@ public class Main {
             System.exit(404);
         }
 
-        String bban=kodBanky+"000000"+kodUctu+kodKrajny+"00";
+        String bban=kodBanky+prefix+kodUctu+kodKrajny+"00";
         System.out.println(bban);
         int cislo = 98-(mod(bban,97));
         String number = Integer.toString(cislo);
         if(cislo<10){
             number = "0"+number;
         }
-        String iban = "SK"+cislo+kodBanky+"000000"+kodUctu;
+        String iban = "SK"+cislo+kodBanky+prefix+kodUctu;
         System.out.println(iban);
 
 
