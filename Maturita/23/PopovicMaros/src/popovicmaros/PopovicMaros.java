@@ -17,7 +17,7 @@ public class PopovicMaros {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String IBAN = "";
-        System.out.println("Zadajte kod krajiny (68)");
+        System.out.println("Zadajte kod krajiny (SK68)");
         IBAN+= sc.next();
         System.out.println("Zadajte kod banky (0720)");
         IBAN+= sc.next();
