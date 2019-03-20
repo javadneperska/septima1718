@@ -19,9 +19,8 @@ public class iban_satmarik {
             Scanner sc3 = new Scanner(System.in);
             System.out.println("Kód krajiny (napr. : SK = 2820) : ");
             kod_krajiny = sc3.next();
-
-
-            //------------------------------------------------------
+            
+            //======================================================
             if(kod_uctu.length() > 10){
                 System.out.println("Chybné číslo účtu!");
                 System.exit(1);
@@ -33,7 +32,29 @@ public class iban_satmarik {
                     kod_uctu = "0"+kod_uctu; //dodá potrebný počet núl, aby číslo účtu malo 10 znakov
                 }
             }
+            //======================================================
+                if(kod_banky.length() > 4){
+                   System.out.println("Chybný kód banky!");
+                   System.exit(1);
+              }
             //------------------------------------------------------
+             if(kod_banky.length() < 4){
+                   System.out.println("Chybný kód banky!");
+                   System.exit(1);
+              }
+            //=====================================================
+            if(kod_krajiny.length() > 4){
+                    System.out.println("Chybný kód krajiny!");
+                    System.exit(1);
+             }
+            //------------------------------------------------------
+            if(kod_krajiny.length() < 4){
+                    System.out.println("Chybný kód krajiny!");
+                    System.exit(1);
+             }
+
+            //======================================================
+        
             System.out.println("Kód účtu :" + kod_uctu);
             String Bban = kod_banky+"000000"+kod_uctu+kod_krajiny+"00";
 
@@ -45,7 +66,7 @@ public class iban_satmarik {
 
             System.out.println("Kontrolný kód :" +num);
             String IBAN = "SK"+num+kod_banky+"000000"+kod_uctu;
-            System.out.println(IBAN);
+            System.out.println("IBAN : " +IBAN);
         }
         static int mod(String num, int a)
         {
