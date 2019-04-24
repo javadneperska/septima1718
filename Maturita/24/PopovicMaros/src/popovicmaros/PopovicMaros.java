@@ -37,6 +37,12 @@ public class PopovicMaros {
             System.out.println("Input error");
         }
         
+        if(start>end){
+           divide = start;
+           start = end;
+           end = divide;
+        }
+        
         System.out.print("divider value: ");
         if(sc.hasNextInt()){
             divide = Integer.parseInt(sc.next());
