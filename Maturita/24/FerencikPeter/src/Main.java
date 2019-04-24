@@ -26,7 +26,18 @@ public class Main {
             }
             else{
 
-                System.out.println("X je mensie ako Y");
+                int[] range = IntStream.rangeClosed((int) y, (int) x).toArray();
+                System.out.println("Zadajte delitela:");
+                int a = sc.nextInt();
+                if (a <= 0) {
+                    System.out.println("Neplatny delitel");
+                } else {
+                    for (int i = 0; i < range.length; i++) {
+                        if (range[i] % a == 0) {
+                            System.out.println(range[i]);
+                        }
+                    }
+                }
             }
 
 
