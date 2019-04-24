@@ -20,7 +20,9 @@ public class Main {
                     for (int i = 0; i < range.length; i++) {
                         if (range[i] % a == 0) {
                             if(range[i]>= 0){
-                                System.out.println(Factorial.factorial(range[i]));
+                                if(Prime_number.prime(Factorial.factorial(range[i])) == false){
+                                    System.out.println(Factorial.factorial(range[i]));
+                                }
                             }
                         }
                     }
@@ -37,7 +39,9 @@ public class Main {
                     for (int i = 0; i < range.length; i++) {
                         if (range[i] % a == 0) {
                             if(range[i]>= 0){
-                                System.out.println(Factorial.factorial(range[i]));
+                              if(Prime_number.prime(Factorial.factorial(range[i])) == false){
+                                  System.out.println(Factorial.factorial(range[i]));
+                              }
                             }
                         }
                     }
