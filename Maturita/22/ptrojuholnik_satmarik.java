@@ -16,15 +16,18 @@ public class ptrojuholnik_satmarik {
                 //_________________________________________
                 for (int j = n-i; j >=1; j--) {
                     System.out.print(" ");
+                    bw.write(" ");
                 }
                 //_________________________________________
                 for (int k = 1; k <=i; k++) {
                     System.out.print("*");
                     bw.write("*");
+
                 }
                 //_________________________________________
                 System.out.println("");
                 bw.write("\n");
+                bw.newLine();
             }
 
             bw.close();
